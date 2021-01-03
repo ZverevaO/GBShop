@@ -2,7 +2,7 @@
 //  GBShopTests.swift
 //  GBShopTests
 //
-//  Created by Оксана Зверева on 22.12.2020.
+//  Created by Оксана Зверева on 03.01.2021.
 //
 
 import XCTest
