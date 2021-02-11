@@ -28,6 +28,9 @@
 		D7431BDB25A18D88003DD677 /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7431BDA25A18D88003DD677 /* AuthRequestFactory.swift */; };
 		D7431BE025A18DA6003DD677 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7431BDF25A18DA6003DD677 /* Auth.swift */; };
 		D7431BE525A18DC9003DD677 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7431BE425A18DC9003DD677 /* RequestFactory.swift */; };
+		D7431BEA25A19358003DD677 /* RegistrationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7431BE925A19358003DD677 /* RegistrationResult.swift */; };
+		D7431BEF25A19555003DD677 /* RegistrationRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7431BEE25A19555003DD677 /* RegistrationRequestFactory.swift */; };
+		D7431BF425A1966E003DD677 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7431BF325A1966E003DD677 /* Registration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,9 @@
 		D7431BDA25A18D88003DD677 /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
 		D7431BDF25A18DA6003DD677 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		D7431BE425A18DC9003DD677 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		D7431BE925A19358003DD677 /* RegistrationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationResult.swift; sourceTree = "<group>"; };
+		D7431BEE25A19555003DD677 /* RegistrationRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRequestFactory.swift; sourceTree = "<group>"; };
+		D7431BF325A1966E003DD677 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		EFDE649790693B5221EE69A0 /* Pods_GBShop_GBShopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBShop_GBShopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF04F2BF4BC53E049FAFB6E7 /* Pods-GBShopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShopTests.debug.xcconfig"; path = "Target Support Files/Pods-GBShopTests/Pods-GBShopTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -244,6 +250,7 @@
 			children = (
 				D7431BAF25A18BAC003DD677 /* User.swift */,
 				D7431BB425A18BCA003DD677 /* LoginResult.swift */,
+				D7431BE925A19358003DD677 /* RegistrationResult.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -271,11 +278,29 @@
 		D7431BB925A18BF8003DD677 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				D7431BDA25A18D88003DD677 /* AuthRequestFactory.swift */,
-				D7431BDF25A18DA6003DD677 /* Auth.swift */,
+				D7431BF925A196BC003DD677 /* Implementation */,
+				D7431BF825A19676003DD677 /* Protocol */,
 				D7431BE425A18DC9003DD677 /* RequestFactory.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		D7431BF825A19676003DD677 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D7431BEE25A19555003DD677 /* RegistrationRequestFactory.swift */,
+				D7431BDA25A18D88003DD677 /* AuthRequestFactory.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		D7431BF925A196BC003DD677 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				D7431BDF25A18DA6003DD677 /* Auth.swift */,
+				D7431BF325A1966E003DD677 /* Registration.swift */,
+			);
+			path = Implementation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -524,7 +549,10 @@
 				D7431BB525A18BCA003DD677 /* LoginResult.swift in Sources */,
 				D7431BCC25A18D07003DD677 /* AbstractRequestFactory.swift in Sources */,
 				D7431BD625A18D56003DD677 /* ErrorParser.swift in Sources */,
+				D7431BF425A1966E003DD677 /* Registration.swift in Sources */,
 				D7431BC225A18CB2003DD677 /* AbstractErrorParser.swift in Sources */,
+				D7431BEA25A19358003DD677 /* RegistrationResult.swift in Sources */,
+				D7431BEF25A19555003DD677 /* RegistrationRequestFactory.swift in Sources */,
 				D7431B6A25A188F6003DD677 /* AppDelegate.swift in Sources */,
 				D7431B6C25A188F6003DD677 /* SceneDelegate.swift in Sources */,
 				D7431BD125A18D33003DD677 /* RequestRouter.swift in Sources */,
